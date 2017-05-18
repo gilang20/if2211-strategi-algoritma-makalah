@@ -1,7 +1,7 @@
 # Penyelesaian persoalan Partisi Bilangan bulat dengan pemrograman dinamis
 import time
 
-def partition(n):
+def integerPartition(n):
 	tabel = [[0 for x in range(n)] for y in range(n+1)]
 	for i in range(n+1):
 		for j in range(n):
@@ -19,6 +19,6 @@ def partition(n):
 	return tabel[n][n-1]
 
 start = time.time()
-print(partition(400))
+print(integerPartition(400))
 end = time.time()
 print((end - start)*1000)
